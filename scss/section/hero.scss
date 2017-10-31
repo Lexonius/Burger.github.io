@@ -1,0 +1,72 @@
+.hero {
+    background-image: url("../img/background first.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    position: relative;
+  }
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+  }
+  
+  .header__logo {
+    margin-right: auto;
+  }
+  .nav {
+    margin-right: rem(15px);
+  }
+  .nav__list {
+    margin: 0;
+    padding: 0;
+  }
+  .nav__item {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    &:after {
+      display: inline-block;
+      vertical-align: middle;
+      content: ' ';
+      @include circle(5px, #fff);
+      margin: 0 12px;
+    }
+    &:last-child:after {
+      display: none;
+    }
+  }
+  .nav__link {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.42;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    transition: .5s;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .hero__img {
+      background-image: url("../img/drops.png");
+      background-repeat: no-repeat;
+      width: 50%;
+      margin-top: 7%;
+  }
+  .burger__img {
+    margin-top: -11%;
+    margin-left: 7%;
+  }
+  .hero__content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-items: center;
+    padding-bottom: 15%;
+  }
