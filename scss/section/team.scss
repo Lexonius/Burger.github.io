@@ -1,0 +1,55 @@
+.team {
+    background: url("../img/background fourth.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.section__title {
+    color: #f9b43b;
+    font-family: 'Gagalin';
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 1.42;
+    margin: 0;
+    padding-top: 60px;
+  }
+  .team__container {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    background: rgba( #2f3234, .93);
+    padding-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .team-accordeon_trigger {
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+    &:before {
+        height: 0;
+        width: 0;
+        border:9px solid transparent;
+        border-top-color: $yellow;
+        border-bottom-width: 0px;
+        content:"";
+    }
+  }
+.team-accordeon__content{
+    display: flex;
+    flex-direction: row;
+}
+.team-accordeon{
+    display: flex;
+}
+.team-accordeon__pic-image{
+    border-radius: 50%;
+    width: 99px;
+    height: 99px;
+}
+.team-accordeon__text {
+    color: #ffffff;
+}
+  
