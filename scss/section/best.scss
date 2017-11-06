@@ -15,14 +15,17 @@
     font-weight: 400;
     line-height: 1.42;
     margin: 0;
-    padding-top: 60px;
+    padding-top: 0;
   }
 .best-list {
     display: flex;
+    margin-top: 91px;
+    
   }
 .wrap {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .description__title {
     font-family: 'Lifehack';
@@ -38,4 +41,29 @@
     color: #828180;
     text-align: center;
 }
+.container {
+    margin-bottom: 90px;
+}
+.meat {
+    padding-right: 42px;
+}
+.icon-meat {
+    width: 100px;
+    height: 91px;
+    justify-content: center;
+    fill: #e25028;
+}
 
+.hand{
+    padding-right: 42px;
+}
+.icon-hand{
+    width: 70px;
+    height: 88px;
+    fill: #f8b845;
+}
+.icon-natural{
+    width: 84px;
+    height: 74px;
+    fill:#8ac03e;
+}

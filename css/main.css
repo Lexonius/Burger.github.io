@@ -111,13 +111,14 @@ ul {
   font-weight: 400;
   line-height: 1.42;
   margin: 0;
-  padding-top: 60px; }
+  padding-top: 0; }
 
 .best-list {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-top: 91px; }
 
 .wrap {
   display: -webkit-box;
@@ -128,7 +129,11 @@ ul {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .description__title {
   font-family: 'Lifehack';
@@ -143,6 +148,34 @@ ul {
   line-height: 1.42;
   color: #828180;
   text-align: center; }
+
+.container {
+  margin-bottom: 90px; }
+
+.meat {
+  padding-right: 42px; }
+
+.icon-meat {
+  width: 100px;
+  height: 91px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  fill: #e25028; }
+
+.hand {
+  padding-right: 42px; }
+
+.icon-hand {
+  width: 70px;
+  height: 88px;
+  fill: #f8b845; }
+
+.icon-natural {
+  width: 84px;
+  height: 74px;
+  fill: #8ac03e; }
 
 .hero {
   background-image: url("../img/background first.jpg");
@@ -352,10 +385,7 @@ ul {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  padding-top: 50px; }
 
 .team-accordeon_trigger {
   color: #ffffff;
@@ -384,13 +414,19 @@ ul {
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
-  flex-direction: row; }
+  flex-direction: row;
+  display: none; }
 
 .team-accordeon {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .team-accordeon__pic-image {
   border-radius: 50%;
@@ -399,3 +435,66 @@ ul {
 
 .team-accordeon__text {
   color: #ffffff; }
+
+.accordeon__text-content {
+  margin: 0; }
+
+.team-accordeon__item-active .team-accordeon_trigger {
+  color: #f8b43a; }
+  .team-accordeon__item-active .team-accordeon_trigger:before {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg); }
+
+.team-accordeon__item-active .team-accordeon__content {
+  display: block; }
+
+.menu-section {
+  background-image: url("../img/background fifth.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  position: relative; }
+
+.menu-accoredeon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.container-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.section__title {
+  color: #ffffff;
+  padding-left: 99px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  width: 85%; }
+
+.menu-accordeon__text {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: absolute;
+  font-family: 'Gagalin';
+  font-size: 30px;
+  top: 60%;
+  margin: 0; }
+
+.vegetarians__text {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: absolute; }
+
+.dietary__text {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: absolute; }

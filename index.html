@@ -48,11 +48,11 @@
     </section>
       <section class="section best">
         <div class="container">
-          <h2 class="section__title section__title--best">Мы лучшие</h2>
+          <h2 class=" section__title--best">Мы лучшие</h2>
           <ul class="best-list">
             <li class="meat">
-              <div class="wrap">
-                <svg class="icon">
+              <div class="icon">
+                <svg class="icon-meat">
                   <use xlink:href="img/icon/sprite.svg#meat" class="meat__svg"></use>
                 </svg>
                 <h2 class="description__title">100% свежее мясо</h2>
@@ -60,8 +60,8 @@
               </div>
             </li>
             <li class="hand">
-              <div class="wrap">
-                <svg class="icon">
+              <div class="icon">
+                <svg class="icon-hand">
                   <use xlink:href="img/icon/sprite.svg#hand" class="hand__svg"></use>
                 </svg>
                 <h2 class="description__title">Ручная сборка</h2>
@@ -69,9 +69,9 @@
               </div>
             </li>
             <li class="natural">
-              <div class="wrap">
-                <svg class="icon">
-                  <use xlink:href="./icon/sprite.svg#natural" class="natural__svg"></use>
+              <div class="icon">
+                <svg class="icon-natural">
+                  <use xlink:href="img/icon/sprite.svg#natural" class="natural__svg"></use>
                 </svg>
                 <h2 class="description__title">Натуральные ингредиенты</h2>
                 <p class="best-description__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</p>
@@ -106,7 +106,7 @@
                 <a href="#" class="team-accordeon_trigger">
                   Дэниэл Редклифф
                 </a>
-                <div class="">
+                <div class="team-accordeon__content">
                   <div clasteam-accordeon__contents="team-accordeon__pic">
                     <img src="./img/aphex.png" class="team-accordeon__pic-image">
                   </div>
@@ -115,8 +115,68 @@
                       Оператор
                     </div>
                     <div class="team-accordeon__text-content">
-                      <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci dicta, ex reprehenderit nostrum nobis laboriosam accusamus quidem atque, dignissimos beatae dolorem? Commodi fuga minima ut ipsam officiis saepe tempora ducimus!
+                      <p class="accordeon__text-content">
+                        С радостью поможет подобрать идеальный бургер и оформить заказ.                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="team-accordeon__item team-accordeon__item-active">
+                <a href="#" class="team-accordeon_trigger">
+                  Ричард Джеймс
+                </a>
+                <div class="team-accordeon__content">
+                  <div clasteam-accordeon__contents="team-accordeon__pic">
+                    <img src="./img/aphex.png" class="team-accordeon__pic-image">
+                  </div>
+                  <div class="team-accordeon__text">
+                    <div class="team-accordeon__text-title">
+                      Оператор
+                    </div>
+                    <div class="team-accordeon__text-content">
+                      <p class="accordeon__text-content">
+                        С радостью поможет подобрать идеальный бургер и оформить заказ.                        
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="team-accordeon__item">
+                <a href="#" class="team-accordeon_trigger">
+                  Джейк Финн
+                </a>
+                <div class="team-accordeon__content">
+                  <div clasteam-accordeon__contents="team-accordeon__pic">
+                    <img src="./img/aphex.png" class="team-accordeon__pic-image">
+                  </div>
+                  <div class="team-accordeon__text">
+                    <div class="team-accordeon__text-title">
+                      Оператор
+                    </div>
+                    <div class="team-accordeon__text-content">
+                      <p class="accordeon__text-content">
+                        С радостью поможет подобрать идеальный бургер и оформить заказ.                         
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="team-accordeon__item">
+                <a href="#" class="team-accordeon_trigger">
+                  Николай Иванов
+                </a>
+                <div class="team-accordeon__content">
+                  <div clasteam-accordeon__contents="team-accordeon__pic">
+                    <img src="./img/aphex.png" class="team-accordeon__pic-image">
+                  </div>
+                  <div class="team-accordeon__text">
+                    <div class="team-accordeon__text-title">
+                      Оператор
+                    </div>
+                    <div class="team-accordeon__text-content">
+                      <p class="accordeon__text-content">
+                        С радостью поможет подобрать идеальный бургер и оформить заказ.                        
                       </p>
                     </div>
                   </div>
@@ -124,5 +184,32 @@
               </li>
             </ul>
           </div>
+        </div>
+      </section>
+      <section class="section menu-section">
+        <div class="container-menu">
+          <div class="section__title">
+              Меню
+          </div>          
+          <ul class="menu-accoredeon">
+            <li class="meat-eaters">
+              <div class="meat-eaters__content">
+                <img src="./img/menu accordeon fisrt.jpg" class="meat-eaters__image">
+                <span class="menu-accordeon__text">Для мясоедов</span>
+              </div>
+            </li>
+            <li class="vegetarians">
+                <div class="vegetarians__content">
+                  <img src="./img/menu accordeon second.jpg" class="vegetarians__image">
+                  <span class="menu-accordeon__text">Вегетарианское</span>
+                </div>
+              </li>
+              <li class="dietary">
+                  <div class="dietary__content">
+                    <img src="./img/menu accordeon third.jpg" class="dietary__image">
+                    <span class="menu-accordeon__text">Диетическое</span>
+                  </div>
+              </li>
+          </ul>
         </div>
       </section>

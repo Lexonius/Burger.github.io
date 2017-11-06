@@ -1,0 +1,38 @@
+.menu-section{
+    background-image: url("../img/background fifth.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+    
+}
+.menu-accoredeon {
+    display: flex;
+}
+.container-menu{
+    display: flex;
+}
+.section__title{
+    color: #ffffff;
+    padding-left: 99px;
+    justify-content: flex-start;
+    width: 85%;
+}
+.menu-accordeon__text{
+    transform: rotate(-90deg);
+    position: absolute;
+    font-family: 'Gagalin';
+    font-size: 30px;
+    top:60%;
+    margin: 0;
+}
+.vegetarians__text{
+    transform: rotate(-90deg);
+    position: absolute;
+
+}
+.dietary__text {
+    transform: rotate(-90deg);
+    position: absolute;
+
+}
