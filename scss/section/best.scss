@@ -27,13 +27,13 @@
     flex-direction: column;
     justify-content: center;
 }
-.description__title {
+.best-list__title {
     font-family: 'Lifehack';
     font-size: 24px;
     font-weight: 400;
     text-align: center;
 }
-.best-description__text {
+.best-list__text {
     font-family: 'Ubuntu';
     font-size: 14px;
     font-weight: 300;
@@ -44,26 +44,28 @@
 .container {
     margin-bottom: 90px;
 }
-.meat {
-    padding-right: 42px;
+.best-list__elem {
+    text-align: center;
 }
 .icon-meat {
     width: 100px;
-    height: 91px;
+    height: 100px;
     justify-content: center;
     fill: #e25028;
 }
-
-.hand{
-    padding-right: 42px;
-}
 .icon-hand{
-    width: 70px;
-    height: 88px;
+    width: 100px;
+    height: 100px;
     fill: #f8b845;
 }
 .icon-natural{
-    width: 84px;
-    height: 74px;
+    width: 100px;
+    height: 100px;
     fill:#8ac03e;
+}
+best-list{
+    flex: 1 1 33%;
+}
+.best-list__item {
+    width: 33%;
 }

@@ -1,38 +1,75 @@
-.menu-section{
-    background-image: url("../img/background fifth.jpg");
-    background-repeat: no-repeat;
+.menu {
+    background-image: url('../img/background fifth.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: 50%;
     position: relative;
     
 }
-.menu-accoredeon {
-    display: flex;
-}
-.container-menu{
-    display: flex;
-}
-.section__title{
+.section__title--menu{
+    position: absolute;
+    left: 4%;
+    top: 5%;
     color: #ffffff;
-    padding-left: 99px;
-    justify-content: flex-start;
-    width: 85%;
 }
-.menu-accordeon__text{
-    transform: rotate(-90deg);
+.menu__list {
     position: absolute;
+    right: 0;
+    top:0;
+    bottom: 0;
+    display: flex;
+}
+.menu__item{
+    display: flex;
+}
+.menu__trigger {
+    width: 5rem;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    display: flex;
+}
+.menu__trigger--first {
+    background-image: url('../img/menu accordeon fisrt.jpg');
+    position: relative;
+    text-decoration: none;
+}
+.menu__trigger--second{
+    background-image: url('../img/menu accordeon second.jpg');
+    position: relative;
+    text-decoration: none;
+}
+.menu__trigger--third{
+    background-image: url('../img/menu accordeon third.jpg');
+    position: relative;
+    text-decoration: none;
+}
+.menu__trigger--text{
+    position: absolute;
+    transform: rotate(-90deg);
     font-family: 'Gagalin';
-    font-size: 30px;
+    font-size: 40px;
+    width: 5rem;
     top:60%;
-    margin: 0;
+    white-space: nowrap;
 }
-.vegetarians__text{
-    transform: rotate(-90deg);
-    position: absolute;
+.menu__item--active .menu__content {
+    display: block;
+    width: 31.25rem;
+}
+.menu__content {
+    background: rgba(47, 50,52, 0.93);
+    padding: 60px 35px;
+    display: none;
+}
+.menu__content-text {
+    width: 100%;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 24px;
+}
 
-}
-.dietary__text {
-    transform: rotate(-90deg);
-    position: absolute;
 
-}
+
+
+
