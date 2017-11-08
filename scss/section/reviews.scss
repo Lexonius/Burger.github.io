@@ -39,22 +39,21 @@
     font-weight: 300;
     color: #ffffff;
 }
-.reviews__hover--btn{
-    width: 37%;
-    height: 12%;
-    background-color: #2f3234;
-    border-radius: 3px;
-    text-align: center;
-}
-.reviews__hover--btn-text{
-    color: #ffffff;
-    text-transform: uppercase;
-    font-family: 'Ubuntu';
-    font-size: 13px;
-    font-weight: 700;
-    text-decoration: none;
+
+.reviews__hover--btn-text {
+    min-width: 6.125rem;
+    padding: 10px 17px;
     border-radius: 5px;
-}
-.reviews__hover--btn:hover {
     background-color: #2f3234;
-}
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.42;
+    text-transform: uppercase;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+    .reviews__hover--btn-text:hover {
+      background-color: #1f2122; }
+  
