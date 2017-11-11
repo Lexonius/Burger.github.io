@@ -19,8 +19,7 @@
   }
 .best-list {
     display: flex;
-    margin-top: 91px;
-    
+    margin-top: rem(91px);
   }
 .wrap {
     display: flex;
@@ -42,25 +41,25 @@
     text-align: center;
 }
 .container {
-    margin-bottom: 90px;
+    margin-bottom: rem(90px);
 }
 .best-list__elem {
     text-align: center;
 }
 .icon-meat {
-    width: 100px;
-    height: 100px;
+    width: rem(100px);
+    height: rem(100px);
     justify-content: center;
     fill: #e25028;
 }
 .icon-hand{
-    width: 100px;
-    height: 100px;
+    width: rem(100px);
+    height: rem(100px);
     fill: #f8b845;
 }
 .icon-natural{
-    width: 100px;
-    height: 100px;
+    width: rem(100px);
+    height: rem(100px);
     fill:#8ac03e;
 }
 best-list{

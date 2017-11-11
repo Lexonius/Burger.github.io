@@ -11,6 +11,9 @@
     line-height: 1.42;
     margin: 0;
     padding-top: 60px;
+    @include tablets {
+        padding-top: 0;
+      }
   }
   .team__container {
     position: absolute;
@@ -19,10 +22,10 @@
     right: 0;
     width: 50%;
     background: rgba( #2f3234, .93);
-    padding-left: 70px;
+    padding-left: rem(70px);
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: rem(50px);
   }
   .team-accordeon_trigger {
       color: #ffffff;
@@ -31,7 +34,7 @@
     &:before {
         height: 0;
         width: 0;
-        border:9px solid transparent;
+        border: 9px solid transparent;
         border-top-color: $yellow;
         border-bottom-width: 0px;
         content:"";
@@ -52,8 +55,8 @@
 }
 .team-accordeon__pic-image{
     border-radius: 50%;
-    width: 99px;
-    height: 99px;
+    width: rem(99px);
+    height: rem(99px);
 }
 .team-accordeon__text {
     color: #ffffff;

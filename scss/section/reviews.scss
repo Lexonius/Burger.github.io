@@ -31,23 +31,23 @@
 .reviews__hover--title {
     color: #ffffff;
     font-family: 'Gagalin';
-    font-size: 14px;
+    font-size: rem(14px);
 }
 .reviews__hover--text {
     font-family: 'Ubuntu';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
     color: #ffffff;
 }
 
 .reviews__hover--btn-text {
     min-width: 6.125rem;
-    padding: 10px 17px;
+    padding: rem(10px) rem(17px);
     border-radius: 5px;
     background-color: #2f3234;
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: rem(13px);
     font-weight: 500;
     line-height: 1.42;
     text-transform: uppercase;

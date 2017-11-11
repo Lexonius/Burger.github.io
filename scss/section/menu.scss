@@ -4,7 +4,6 @@
     background-repeat: no-repeat;
     background-position: 50%;
     position: relative;
-    
 }
 .section__title--menu{
     position: absolute;
@@ -47,7 +46,7 @@
     position: absolute;
     transform: rotate(-90deg);
     font-family: 'Gagalin';
-    font-size: 40px;
+    font-size: rem(40px);
     width: 5rem;
     top:60%;
     white-space: nowrap;
@@ -58,15 +57,15 @@
 }
 .menu__content {
     background: rgba(47, 50,52, 0.93);
-    padding: 60px 35px;
+    padding: rem(60px)rem(35px);
     display: none;
 }
 .menu__content-text {
     width: 100%;
     color: #ffffff;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 200;
-    line-height: 24px;
+    line-height: rem(24px);
 }
 
 
