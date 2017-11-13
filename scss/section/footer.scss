@@ -11,6 +11,9 @@
 .footer-content{
     display: flex;
     width: 100%;
+    @include phones {
+        flex-direction: column;
+    }
 }
 .footer__text{
     justify-content: flex-start;
@@ -24,11 +27,17 @@
         width: 70%;
     }
     @include phones {
-        width: 60%;
+        width: 100%;
+        text-align: center;
+        padding:10px 0;
     }
 }
 .social-media {
     justify-content: flex-end;
+    @include phones {
+        width: 33%;
+        
+    }
     
 }
 .phone__icon {
@@ -44,12 +53,20 @@
     font-weight: bold;
     padding-top: rem(12px);
     padding-bottom: rem(10px);
+    @include phones {
+        padding:0;
+        padding-top: 10px;
+    }
 }
 .social-media__icon {
     width: rem(24px);
     height: rem(24px);
     margin-right: rem(10px);
     margin-top: rem(25px);
+    @include phones {
+        margin: 0 auto;
+        margin-right: 10px;
+    }
 }
 .social-media__icon--svg {
     fill: #5a5a5a;
