@@ -23,8 +23,10 @@
   
   .section {
     height: 100%;
-    min-width: rem(940px);
+    
     min-height: rem(650px);
+    display: flex;
+    position: relative;
   }
   
   .order-link {
@@ -42,4 +44,5 @@
     &:hover {
       background-color: darken($orange, 7%);
     }
+    
   }

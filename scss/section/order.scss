@@ -5,6 +5,11 @@
 }
 .form {
     margin-top: rem(85px);
+    @include phones{
+        width: 158%;
+        margin-top:1.3125rem;
+    }    
+    
 }
 .form__block-title {
     color: #ffffff;
@@ -14,6 +19,10 @@
 .form__content {
     width: 49%;
     margin-right: rem(20px);
+    @include tablets{
+        width: 100%;
+        padding: 0 20%;
+    }    
 }
 .form__input {
     border: none;
@@ -35,6 +44,9 @@
 }
 .form__elem {
     display: flex;
+    @include tablets {
+        flex-direction: column;
+    }
 }
 .form__radio{
     margin-right: rem(20px);
@@ -71,6 +83,11 @@
     font-weight: 500;
     line-height: 1.42;
 }
-
+.section__title{
+    @include phones {
+        text-align: center;
+        padding-top: 50px;
+    }
+}
 
 

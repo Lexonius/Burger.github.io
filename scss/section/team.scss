@@ -26,11 +26,16 @@
     display: flex;
     flex-direction: column;
     padding-top: rem(50px);
+    @include tablets {
+        width: 100%;
+      }
   }
   .team-accordeon_trigger {
       color: #ffffff;
       display: flex;
       align-items: center;
+    
+     
     &:before {
         height: 0;
         width: 0;
@@ -40,6 +45,7 @@
         content:"";
         transition: 0.5s;
     }
+
   }
 
 .team-accordeon__content{
@@ -50,8 +56,6 @@
 .team-accordeon{
     display: flex;
     flex-direction: column;
-    
-    
 }
 .team-accordeon__pic-image{
     border-radius: 50%;
@@ -71,11 +75,16 @@
         &:before {
             transform: rotate(-180deg);
         }
+    
     }
 .team-accordeon__content{
     display: flex;
-}
     
+}   
 }
-
-  
+.team-accordeon__item {
+    @include tablets {
+        text-align: center;
+        display: inline-block;
+      }
+}

@@ -1,5 +1,6 @@
 .reviews__list{
-    height: 100%;
+    height: auto;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -10,6 +11,10 @@
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
+    @include tablets {
+        width: 50%;
+        height: 25%;
+    }
     filter: grayscale(100);
     &:hover {
         .reviews__hover{
@@ -27,17 +32,26 @@
     opacity: 0;
     transition: opacity .5s;
     padding: 17% 7%;
+    @include tablets {
+        padding: 0;
+    }
 }
 .reviews__hover--title {
     color: #ffffff;
     font-family: 'Gagalin';
     font-size: rem(14px);
+    @include tablets {
+        text-align: center;
+    }
 }
 .reviews__hover--text {
     font-family: 'Ubuntu';
     font-size: rem(14px);
     font-weight: 300;
     color: #ffffff;
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .reviews__hover--btn-text {
@@ -56,4 +70,8 @@
     transition: .5s; }
     .reviews__hover--btn-text:hover {
       background-color: #1f2122; }
-  
+.reviews__hover--btn{
+    @include tablets {
+        text-align: center;
+    }
+}

@@ -50,10 +50,17 @@
     width: 5rem;
     top:60%;
     white-space: nowrap;
+    @include tablets {
+        top:83%;
+    }
 }
+
 .menu__item--active .menu__content {
     display: block;
     width: 31.25rem;
+    @include tablets {
+        display: none;
+    }
 }
 .menu__content {
     background: rgba(47, 50,52, 0.93);
@@ -67,6 +74,7 @@
     font-weight: 200;
     line-height: rem(24px);
 }
+
 
 
 

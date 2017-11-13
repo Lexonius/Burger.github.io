@@ -20,9 +20,16 @@
     padding-left: rem(82px);
     padding-top: rem(10px);
     width: 83%;
+    @include tablets {
+        width: 70%;
+    }
+    @include phones {
+        width: 60%;
+    }
 }
 .social-media {
     justify-content: flex-end;
+    
 }
 .phone__icon {
     width: rem(23px);

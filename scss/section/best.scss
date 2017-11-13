@@ -20,6 +20,9 @@
 .best-list {
     display: flex;
     margin-top: rem(91px);
+    @include phones {
+        flex-direction: column;
+    }
   }
 .wrap {
     display: flex;
@@ -62,9 +65,12 @@
     height: rem(100px);
     fill:#8ac03e;
 }
-best-list{
+.best-list{
     flex: 1 1 33%;
 }
 .best-list__item {
     width: 33%;
+    @include phones {
+        width: 100%;
+    }
 }
