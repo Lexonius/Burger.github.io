@@ -137,4 +137,43 @@
     font-weight: 500;
     line-height: 1;
   }
-  
+  .fixed-menu{
+    position: fixed;
+    right: 2%;
+    top: 5rem;
+  }
+  .fixed-menu__item{
+    margin-bottom: 0.3125rem;
+  }
+  .fixed-menu__link {
+    width: 1rem;
+    height: 1rem;
+    display: block;
+    position: relative;
+}
+.fixed-menu__link:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border: 0.0625rem solid #fff;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: .5s;
+}
+.fixed-menu__link:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

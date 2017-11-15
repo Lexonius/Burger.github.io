@@ -3,14 +3,15 @@
     background-size: cover;
     position: relative;
 }
-.section__title {
+.section__title-team{
     color: #f9b43b;
     font-family: 'Gagalin';
     font-size: 72px;
     font-weight: 400;
     line-height: 1.42;
     margin: 0;
-    padding-top: 60px;
+    padding-top: 20px;
+    padding-bottom: 60px;
     @include tablets {
         padding-top: 0;
       }
@@ -34,7 +35,10 @@
       color: #ffffff;
       display: flex;
       align-items: center;
-    
+      text-decoration: none;
+      font-family: "Gagalin";
+      font-size: 14px;
+      padding-bottom: 36px;
      
     &:before {
         height: 0;
@@ -57,16 +61,22 @@
     display: flex;
     flex-direction: column;
 }
-.team-accordeon__pic-image{
+.team-accordeon__pic{
     border-radius: 50%;
     width: rem(99px);
     height: rem(99px);
+    overflow: hidden;
 }
 .team-accordeon__text {
     color: #ffffff;
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    width: 30%;
+    margin-left: 24px;
 }
 .accordeon__text-content{
     margin: 0;
+    padding-top: 15px;
 }
 .team-accordeon__item-active{
     .team-accordeon_trigger {
@@ -79,7 +89,6 @@
     }
 .team-accordeon__content{
     display: flex;
-    
 }   
 }
 .team-accordeon__item {
@@ -88,3 +97,4 @@
         display: inline-block;
       }
 }
+

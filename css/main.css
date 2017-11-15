@@ -378,9 +378,56 @@ ul {
   font-weight: 500;
   line-height: 1; }
 
+.fixed-menu {
+  position: fixed;
+  right: 2%;
+  top: 5rem; }
+
+.fixed-menu__item {
+  margin-bottom: 0.3125rem; }
+
+.fixed-menu__link {
+  width: 1rem;
+  height: 1rem;
+  display: block;
+  position: relative; }
+
+.fixed-menu__link:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border: 0.0625rem solid #fff;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+
+.fixed-menu__link:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
 .burger-section {
   background-image: url("../img/background third.jpg");
   background-size: cover;
+  background-position: 50%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -394,27 +441,199 @@ ul {
   -ms-flex-align: center;
   align-items: center; }
 
-.arrow {
+.burger__container {
+  width: 80%; }
+
+.burger__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.arrow__link {
+  position: static;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.arrow-scroll {
+  fill: #ffffff; }
+
+.arrow__link-icon--left {
+  width: 26px;
+  height: 33px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.arrow__link-icon--right {
+  width: 26px;
+  height: 33px;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg); }
+
+.burger__content-elem {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  width: 50%; }
+
+.content__image {
+  width: 90px;
+  height: 90px;
+  border-radius: 5px; }
+
+.content__image-top {
+  background-color: #f08c33; }
+
+.content__icon {
+  height: 65px;
+  fill: #ffffff;
+  width: 100%;
+  padding-top: 10px; }
+
+.content__icon-text {
+  font-family: 'Gagalin';
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center; }
+
+.burger__content-elem--title {
+  font-family: 'Gagalin';
+  color: #ffffff;
+  font-size: 72px;
+  line-height: 1; }
+
+.burger__content-elem-right {
+  width: 40%; }
+
+.burger__content-elem--text {
+  font-family: 'Ubuntu';
+  font-size: 15px;
+  color: #fcede1;
+  padding-top: 50px; }
+
+.burger__content-elem--price {
+  font-family: 'Gagalin';
+  font-size: 30px;
+  color: #e35028;
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 75%; }
+
+.price {
+  font-family: 'Gagalin';
+  font-size: 72px;
+  color: #e35028;
+  height: 80%; }
+
+.burger-link {
+  min-width: 6.125rem;
+  padding: 0.625rem 1.0625rem;
+  border-radius: 5px;
+  background-color: #e25028;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.42;
+  text-transform: uppercase;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+
+.order-link:hover {
+  background-color: #cb411b; }
+
+.burger__content-elem--dropdown {
+  background: rgba(255, 255, 255, 0.9);
+  display: none;
+  border-radius: 5px;
+  position: absolute;
+  left: 16.6%; }
+
+.content__image-top:hover {
+  background: #e07210; }
+
+.content__image-top:hover .burger__content-elem--dropdown {
+  display: block; }
+
+.dropdown__list-elem {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.dropdown__icon {
+  width: 45px;
+  height: 45px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px; }
+
+.dropdown__text-desc {
+  font-family: 'Ubuntu';
+  font-size: 14px;
+  padding-left: 25px;
+  padding-top: 20px;
+  width: 60px; }
+
+.dropdown__text-weight {
+  font-family: 'Ubuntu';
+  font-size: 14px;
+  padding-left: 65px;
+  padding-top: 10px;
+  padding-right: 20px; }
 
 .team {
   background: url("../img/background fourth.jpg") center center no-repeat;
   background-size: cover;
   position: relative; }
 
-.section__title {
+.section__title-team {
   color: #f9b43b;
   font-family: 'Gagalin';
   font-size: 72px;
   font-weight: 400;
   line-height: 1.42;
   margin: 0;
-  padding-top: 60px; }
+  padding-top: 20px;
+  padding-bottom: 60px; }
   @media screen and (max-width: 768px) {
-    .section__title {
+    .section__title-team {
       padding-top: 0; } }
 
 .team__container {
@@ -448,7 +667,11 @@ ul {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  text-decoration: none;
+  font-family: "Gagalin";
+  font-size: 14px;
+  padding-bottom: 36px; }
   .team-accordeon_trigger:before {
     height: 0;
     width: 0;
@@ -483,16 +706,22 @@ ul {
   -ms-flex-direction: column;
   flex-direction: column; }
 
-.team-accordeon__pic-image {
+.team-accordeon__pic {
   border-radius: 50%;
   width: 6.1875rem;
-  height: 6.1875rem; }
+  height: 6.1875rem;
+  overflow: hidden; }
 
 .team-accordeon__text {
-  color: #ffffff; }
+  color: #ffffff;
+  font-family: 'Ubuntu';
+  font-size: 14px;
+  width: 30%;
+  margin-left: 24px; }
 
 .accordeon__text-content {
-  margin: 0; }
+  margin: 0;
+  padding-top: 15px; }
 
 .team-accordeon__item-active .team-accordeon_trigger {
   color: #f8b43a; }
