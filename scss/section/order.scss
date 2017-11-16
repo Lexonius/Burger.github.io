@@ -86,7 +86,6 @@
 .section__title{
     @include phones {
         text-align: center;
-        padding-top: 50px;
     }
 }
 .section__title--order{
@@ -94,5 +93,6 @@
     font-family: 'Gagalin';
     font-size: 72px;
     color:$yellow;
+    padding-top: 50px;
 }
 

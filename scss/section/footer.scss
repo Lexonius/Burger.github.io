@@ -22,7 +22,7 @@
     margin: 0;
     padding-left: rem(82px);
     padding-top: rem(10px);
-    width: 83%;
+    width: 80%;
     @include tablets {
         width: 70%;
     }
@@ -35,8 +35,7 @@
 .social-media {
     justify-content: flex-end;
     @include phones {
-        width: 33%;
-        
+        text-align: center;
     }
     
 }
@@ -61,7 +60,7 @@
 .social-media__icon {
     width: rem(24px);
     height: rem(24px);
-    margin-right: rem(10px);
+    margin-right: 0.5rem;
     margin-top: rem(25px);
     @include phones {
         margin: 0 auto;

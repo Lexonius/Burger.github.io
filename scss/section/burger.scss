@@ -82,6 +82,9 @@
     justify-content: space-between;
     width: 75%; 
 }
+.burger__image-pic{
+    width: 100%;
+}
 .price{
     font-family: 'Gagalin';
     font-size: 72px;
@@ -111,6 +114,8 @@
     border-radius: 5px;
     position: absolute;
     left: 16.6%;
+    top: 8.5%;
+    
 }
 .content__image-top:hover{
     background: #e07210;
@@ -142,4 +147,10 @@
     padding-left: 65px;
     padding-top: 10px;
     padding-right: 20px;
+}
+.wrap__burger{
+    
+}
+.wrap__burger:hover .burger__content-elem--dropdown{
+    display: block;
 }

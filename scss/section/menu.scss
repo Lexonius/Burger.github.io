@@ -12,6 +12,9 @@
     color: #ffffff;
     font-family: 'Gagalin';
     font-size: 72px;
+    @include phones{
+    font-size: 50px; 
+    }
 }
 .menu__list {
     position: absolute;
