@@ -13,6 +13,7 @@
     padding-top: rem(10px);
     padding-left: rem(10px);
   }
+
   
   .header__logo {
     margin-right: auto;
@@ -58,6 +59,12 @@
   }
   .header__btn {
     display: flex;
+    @include tablets{
+      margin-right: 40px;
+    }
+    @include phones{
+      margin-right: 40px;
+    }
   }
   .hamburger__menu-link {
     background-repeat: no-repeat;
@@ -102,7 +109,7 @@
       padding-left: 0;
       display: inline-block;
       width: 83%;
-      margin-left: 7%;
+      
   }
 }
   
@@ -189,12 +196,4 @@
 }
 .fixed-menu__item:hover .fixed-menu__link:before {
   opacity: 1;
-}
-.hero__container{
-  @include tablets{
-   max-width: 40rem; 
-  }
-  @include phones{
-    max-width: 22rem;
-  }
 }

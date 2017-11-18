@@ -17,8 +17,8 @@
     font-size: rem(14px);
 }
 .form__content {
-    width: 49%;
-    margin-right: rem(20px);
+    width: 50%;
+    padding: 0 10px 0 10px;
     @include tablets{
         width: 100%;
         padding: 0 20%;
@@ -44,6 +44,7 @@
 }
 .form__elem {
     display: flex;
+    
     @include tablets {
         flex-direction: column;
     }
@@ -94,5 +95,6 @@
     font-size: 72px;
     color:$yellow;
     padding-top: 50px;
+    text-align: center;
 }
 

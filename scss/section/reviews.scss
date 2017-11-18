@@ -35,13 +35,23 @@
     @include tablets {
         padding: 0;
     }
+    @include phones {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
 }
 .reviews__hover--title {
     color: #ffffff;
     font-family: 'Gagalin';
     font-size: rem(14px);
     @include tablets {
-        text-align: center;
+    text-align: center;
+    }
+    @include phones {
+    font-size: 22px;
+    margin: 0;
     }
 }
 .reviews__hover--text {
@@ -51,6 +61,11 @@
     color: #ffffff;
     @include tablets {
         text-align: center;
+        font-size: 11px;
+    }
+    @include phones {
+        text-align: center;
+        display: none;
     }
 }
 
@@ -67,11 +82,45 @@
     text-transform: uppercase;
     -webkit-transition: .5s;
     -o-transition: .5s;
-    transition: .5s; }
+    transition: .5s; 
+    @include phones {
+    display: none;
+    }
+}
     .reviews__hover--btn-text:hover {
       background-color: #1f2122; }
-.reviews__hover--btn{
+    
+     
+      .reviews__hover--btn{
     @include tablets {
         text-align: center;
     }
+    @include phones {
+      text-align: center;  
+    }
 }
+.reviews__hover--btn-text-phones{
+    min-width: 6.125rem;
+    padding: rem(10px) rem(17px);
+    border-radius: 5px;
+    background-color: #2f3234;
+    color: #fff;
+    text-decoration: none;
+    font-size: rem(13px);
+    font-weight: 500;
+    line-height: 1.42;
+    text-transform: uppercase;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    display: none;
+    width: 135px;
+    margin-top: 10px;
+    @include phones {
+        display: inline-block;
+        }
+    }
+     
+    .reviews__hover--btn-text-phones:hover {
+      background-color: #1f2122; }
+     

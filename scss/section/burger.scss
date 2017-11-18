@@ -11,6 +11,11 @@
 }
 .burger__content{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    @include tablets{
+        flex-direction: column;
+    }
 }
 .arrow__link{
     position: static;
@@ -34,6 +39,9 @@
    flex-direction: column;
    justify-content: flex-start;
    width: 50%;
+   @include tablets{
+       width: 100%;
+   }
 }
 
 .content__image {
@@ -61,15 +69,32 @@
     color: #ffffff;
     font-size: 72px;
     line-height: 1;
+    @include tablets{
+        font-size: 55px;
+    }
 }
 .burger__content-elem-right{
     width: 40%;
+    @include tablets{
+        width: 95%;
+        text-align: center;
+    }
+}
+.burger__content-elem-left{
+    @include tablets{
+      flex-direction: row; 
+      padding-top: 30px;
+    }
 }
 .burger__content-elem--text{
     font-family: 'Ubuntu';
     font-size: 15px;
     color: #fcede1;
     padding-top: 50px;
+    @include tablets{
+        padding-top: 30px;
+        font-size: 13px;
+    }
 }
 .burger__content-elem--price{
     font-family: 'Gagalin';
@@ -81,6 +106,13 @@
     align-items: flex-end;
     justify-content: space-between;
     width: 75%; 
+    @include tablets{
+       padding-top: 0;
+       align-items: center;
+       width: 100%;
+       justify-content: center;
+       padding-bottom: 20px;
+      }
 }
 .burger__image-pic{
     width: 100%;
@@ -105,7 +137,7 @@
     -webkit-transition: .5s;
     -o-transition: .5s;
     transition: .5s; }
-    .order-link:hover {
+    .burger-link:hover {
       background-color: #cb411b; }
   
 .burger__content-elem--dropdown{
@@ -149,7 +181,10 @@
     padding-right: 20px;
 }
 .wrap__burger{
-    
+    @include tablets{
+        width: 30%;
+    }
+
 }
 .wrap__burger:hover .burger__content-elem--dropdown{
     display: block;
