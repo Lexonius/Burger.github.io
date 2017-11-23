@@ -145,9 +145,8 @@
     display: none;
     border-radius: 5px;
     position: absolute;
-    left: 16.6%;
-    top: 8.5%;
-    
+    left: 90px;
+    top: 0;
 }
 .content__image-top:hover{
     background: #e07210;
@@ -181,6 +180,7 @@
     padding-right: 20px;
 }
 .wrap__burger{
+    position: relative;
     @include tablets{
         width: 30%;
     }
@@ -188,4 +188,7 @@
 }
 .wrap__burger:hover .burger__content-elem--dropdown{
     display: block;
+}
+.content__icon-text-svg{
+    color: #ffffff;
 }

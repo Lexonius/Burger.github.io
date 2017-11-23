@@ -119,8 +119,7 @@
     border-radius: 50%;
     position: absolute;
     top: 2px;
-    left: 2px;
-    
+    left: 2px; 
 }
 .form__radio-elem:checked + .form__radio-fake::after {
     display: block;
@@ -136,18 +135,4 @@
     position: relative;
     background: -webkit-linear-gradient(top, #fdfdfd 0%,#efefef 100%); 
     background: linear-gradient(to bottom, #fdfdfd 0%,#efefef 100%); 
-}
-.form__radio-check-fake::after{
-    content: '';
-    border: 0.25rem solid;
-    border-radius: 0.125rem;
-    border-top: none;
-    border-right: none;
-    border-color: #e25028;
-    width: 0.75rem;
-    height: 0.5rem;
-    position: absolute;
-    top: 43%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-50deg) skewX(-5deg) scale(0);
 }
