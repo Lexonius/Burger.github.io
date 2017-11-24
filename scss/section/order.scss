@@ -112,7 +112,6 @@
 }
 .form__radio-fake::after {
     content: "";
-    display: none;
     width: 9px;
     height: 9px;
     background: #e35028;
@@ -120,10 +119,10 @@
     position: absolute;
     top: 2px;
     left: 2px; 
+   opacity: 0;
 }
 .form__radio-elem:checked + .form__radio-fake::after {
-    display: block;
-    transition: 5s;
+    opacity: 1;
 }
 .form__radio-elem-check{
     display: none;

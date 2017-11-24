@@ -117,11 +117,17 @@
 .burger__image-pic{
     width: 100%;
 }
+.burger__image{
+    @include tablets{
+        margin-top: 115px;
+    }
+}
 .price{
     font-family: 'Gagalin';
     font-size: 72px;
     color:#e35028;
     height: 80%;
+    margin-right: 10px;
 }
 .burger-link {
     min-width: 6.125rem;
@@ -136,7 +142,8 @@
     text-transform: uppercase;
     -webkit-transition: .5s;
     -o-transition: .5s;
-    transition: .5s; }
+    transition: .5s; 
+    margin-left: 10px;}
     .burger-link:hover {
       background-color: #cb411b; }
   
@@ -189,6 +196,11 @@
 .wrap__burger:hover .burger__content-elem--dropdown{
     display: block;
 }
-.content__icon-text-svg{
+
+.content__icon-text--number{
+    font-family: 'Gagalin';
     color: #ffffff;
+    position: relative;
+    top: -64%;
+    text-align: center;
 }
