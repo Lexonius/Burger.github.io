@@ -3,20 +3,20 @@
     height: 100%;
     position: relative;
     overflow: hidden;
-    min-height: rem(650px);
   }
   
   .maincontent {
-    height: 100%;
-    min-height: rem(650px);
+    height: 650px;
     transform: translateY(-0%);
     transition: 1s;
     will-change: transform;
+    min-height: auto;
 
   }
   
   .container {
-    width: 100%;
+    width: 95%;
+    position: relative;
     max-width: rem(940px);
     margin: 0 auto;
     display: flex;
@@ -28,7 +28,7 @@
   .section {
     height: 100%;
     
-    min-height: rem(650px);
+    
     display: flex;
     position: relative;
   }

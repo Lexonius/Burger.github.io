@@ -4,10 +4,9 @@
     background-position: center bottom;
 }
 .form {
-    margin-top: rem(85px);
     @include phones{
         width: 158%;
-        margin-top:1.3125rem;
+        
     }    
     
 }
@@ -33,6 +32,9 @@
 .form__row{
     display: flex;
     margin-bottom: rem(20px); 
+    @include tablets{
+        margin: 0;
+    }
 }
 .form__block {
     flex: 1;
@@ -51,6 +53,9 @@
 }
 .form__radio{
     margin-right: rem(20px);
+    @include tablets{
+        margin-right: 0.25rem;
+    }
 }
 .form__textarea {
     border-radius: 5px;
@@ -96,6 +101,9 @@
     color:$yellow;
     padding-top: 50px;
     text-align: center;
+    @include phones {
+    font-size: 60px;
+    }
 }
 .form__radio-elem{
     display: none;
