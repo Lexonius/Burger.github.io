@@ -62,7 +62,7 @@
 
 .menu__item--active .menu__content {
     display: none;
-    width: 31.25rem;
+    width: 100%;
     @include tablets {
         display: none;
     }

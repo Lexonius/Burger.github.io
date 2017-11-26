@@ -15,7 +15,6 @@
   }
   
   .container {
-    width: 95%;
     position: relative;
     max-width: rem(940px);
     margin: 0 auto;
@@ -23,8 +22,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
   
+  @include phones{
+
+  }
+}
   .section {
     height: 100%;
     

@@ -4,4 +4,8 @@
     background-size: cover;
     display: flex;
     background-position: 50% 50%;
+    height: 90%;
+    @include phones{
+        height: 85%;
+    }
 }

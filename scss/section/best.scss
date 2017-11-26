@@ -16,12 +16,16 @@
     line-height: 1.42;
     margin: 0;
     padding-top: 0;
+    @include phones{
+        font-size: 64px;
+    }
   }
 .best-list {
     display: flex;
     margin-top: rem(91px);
     @include phones {
         flex-direction: column;
+        margin-top: 0;
     }
   }
 .wrap {
@@ -34,6 +38,9 @@
     font-size: 24px;
     font-weight: 400;
     text-align: center;
+    @include phones{
+        font-size: 22px;
+    }
 }
 .best-list__text {
     font-family: 'Ubuntu';
@@ -43,9 +50,7 @@
     color: #828180;
     text-align: center;
 }
-.container {
-    margin-bottom: rem(90px);
-}
+
 .best-list__elem {
     text-align: center;
 }
@@ -67,10 +72,27 @@
 }
 .best-list{
     flex: 1 1 33%;
+    @include phones{
+        margin-left: 10px;
+    }
+    
 }
 .best-list__item {
     width: 33%;
     @include phones {
         width: 100%;
+    }
+}
+.best-list__elem{
+    @include phones{
+    display: flex;  
+    }
+    
+}
+.best-list__text-elem{
+    flex-direction: column;
+    @include phones{
+        width: 70%;
+        margin-left: 10px;
     }
 }

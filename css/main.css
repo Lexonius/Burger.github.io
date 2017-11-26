@@ -16,7 +16,6 @@
   min-height: auto; }
 
 .container {
-  width: 95%;
   position: relative;
   max-width: 58.75rem;
   margin: 0 auto;
@@ -134,6 +133,9 @@ ul {
   line-height: 1.42;
   margin: 0;
   padding-top: 0; }
+  @media screen and (max-width: 480px) {
+    .section__title--best {
+      font-size: 64px; } }
 
 .best-list {
   display: -webkit-box;
@@ -147,7 +149,8 @@ ul {
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
       -ms-flex-direction: column;
-      flex-direction: column; } }
+      flex-direction: column;
+      margin-top: 0; } }
 
 .wrap {
   display: -webkit-box;
@@ -169,6 +172,9 @@ ul {
   font-size: 24px;
   font-weight: 400;
   text-align: center; }
+  @media screen and (max-width: 480px) {
+    .best-list__title {
+      font-size: 22px; } }
 
 .best-list__text {
   font-family: 'Ubuntu';
@@ -177,9 +183,6 @@ ul {
   line-height: 1.42;
   color: #828180;
   text-align: center; }
-
-.container {
-  margin-bottom: 5.625rem; }
 
 .best-list__elem {
   text-align: center; }
@@ -208,12 +211,33 @@ ul {
   -webkit-flex: 1 1 33%;
   -ms-flex: 1 1 33%;
   flex: 1 1 33%; }
+  @media screen and (max-width: 480px) {
+    .best-list {
+      margin-left: 10px; } }
 
 .best-list__item {
   width: 33%; }
   @media screen and (max-width: 480px) {
     .best-list__item {
       width: 100%; } }
+
+@media screen and (max-width: 480px) {
+  .best-list__elem {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.best-list__text-elem {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  @media screen and (max-width: 480px) {
+    .best-list__text-elem {
+      width: 70%;
+      margin-left: 10px; } }
 
 .hero {
   background-image: url("../img/background first.jpg");
@@ -341,9 +365,6 @@ ul {
       -webkit-align-items: center;
       -ms-flex-align: center;
       align-items: center; } }
-  @media screen and (max-width: 480px) {
-    .hero__content {
-      width: 120%; } }
 
 .hero__description {
   width: 50%; }
@@ -357,7 +378,6 @@ ul {
   -ms-flex-positive: 0;
   flex-grow: 0;
   width: 350px;
-  height: 350px;
   -o-object-fit: contain;
   object-fit: contain; }
   @media screen and (max-width: 768px) {
@@ -368,12 +388,13 @@ ul {
       -webkit-box-flex: 0;
       -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
-      flex-grow: 0; } }
+      flex-grow: 0;
+      height: 50%; } }
   @media screen and (max-width: 480px) {
     .hero__img {
       padding-left: 0;
       display: inline-block;
-      width: 83%; } }
+      width: 70%; } }
 
 .hero__description {
   -webkit-box-orient: vertical;
@@ -409,7 +430,8 @@ ul {
   @media screen and (max-width: 480px) {
     .section__title--hero {
       padding-left: 12px;
-      white-space: nowrap; } }
+      white-space: nowrap;
+      font-size: 3.5rem; } }
 
 .hero__description-text {
   color: #ffffff;
@@ -417,6 +439,9 @@ ul {
   font-size: 4.0625rem;
   font-weight: 500;
   line-height: 1; }
+  @media screen and (max-width: 480px) {
+    .hero__description-text {
+      font-size: 3.0625rem; } }
 
 .fixed-menu {
   position: fixed;
@@ -871,7 +896,7 @@ ul {
   @media screen and (max-width: 768px) {
     .team-accordeon__text {
       margin: 0 auto;
-      width: 45%; } }
+      width: 100%; } }
 
 .accordeon__text-content {
   margin: 0;
@@ -998,7 +1023,7 @@ ul {
 
 .menu__item--active .menu__content {
   display: none;
-  width: 31.25rem; }
+  width: 100%; }
   @media screen and (max-width: 768px) {
     .menu__item--active .menu__content {
       display: none; } }
@@ -1163,7 +1188,7 @@ ul {
 
 @media screen and (max-width: 480px) {
   .form {
-    width: 158%; } }
+    width: 125%; } }
 
 .form__block-title {
   color: #ffffff;
@@ -1269,7 +1294,9 @@ ul {
   text-align: center; }
   @media screen and (max-width: 480px) {
     .section__title--order {
-      font-size: 60px; } }
+      padding-top: 0;
+      font-size: 60px;
+      padding-top: 0; } }
 
 .form__radio-elem {
   display: none; }
@@ -1323,7 +1350,11 @@ ul {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-position: 50% 50%; }
+  background-position: 50% 50%;
+  height: 90%; }
+  @media screen and (max-width: 480px) {
+    .mape {
+      height: 85%; } }
 
 .footer {
   background-image: url("../img/footer.jpg");
