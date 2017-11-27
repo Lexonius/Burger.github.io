@@ -13,7 +13,9 @@
     padding-top: rem(10px);
     padding-left: rem(10px);
   }
-
+.logo__img{
+  z-index: 100;
+}
   
   .header__logo {
     margin-right: auto;
@@ -218,3 +220,53 @@
   .fixed-menu__item {
     margin-bottom: rem(5px);
   }
+  .mobile-menu{
+    min-width: 320px;
+    position: absolute;
+    background: #2f3234;
+    top: 0;
+    width: 100%;
+    transition: opacity .35s, height .35s;
+    visibility: hidden;
+  }
+  .mobile-menu__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 100px;
+  }
+  .mobile-menu__link{
+    font-family: 'Ubuntu';
+    font-size: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .mobile-menu-active{
+    opacity: .99;
+    visibility: visible;
+    height: 100%;
+  }
+  .mobile-menu__link::after{
+    margin: 0 auto;
+    display: block;
+    content: ' ';
+    width: 0.3125rem;
+    height: 0.3125rem;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+.mobile-menu--top{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  align-items: center;
+}
+.mobile-menu__btn{
+  margin-right: 22px;
+}

@@ -6,11 +6,11 @@
   }
   
   .maincontent {
-    height: 650px;
+    height: 100vh;
     transform: translateY(-0%);
     transition: 1s;
     will-change: transform;
-    min-height: auto;
+    min-height: 650px;
 
   }
   

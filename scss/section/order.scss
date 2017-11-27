@@ -14,13 +14,14 @@
     color: #ffffff;
     margin-bottom: rem(5px);
     font-size: rem(14px);
+    margin-top: 0.3rem;
 }
 .form__content {
     width: 50%;
     padding: 0 10px 0 10px;
     @include tablets{
         width: 100%;
-        padding: 0 20%;
+        padding: 0 12%;
     }    
 }
 .form__input {
@@ -144,4 +145,18 @@
     position: relative;
     background: -webkit-linear-gradient(top, #fdfdfd 0%,#efefef 100%); 
     background: linear-gradient(to bottom, #fdfdfd 0%,#efefef 100%); 
+}
+.form__radio-check-fake::after{
+    content: "";
+    position: absolute;
+    left: 0.0625rem;
+    background: url('../img/w128h1281338911632checkmark2.png') no-repeat;
+    background-size: cover;
+    width: 11px;
+    height: 9px;
+    opacity: 0;
+    transition: all 0.4s;
+}
+.form__radio-elem-check:checked + .form__radio-check-fake::after {
+    opacity: 1;
 }

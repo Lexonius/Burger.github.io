@@ -5,11 +5,12 @@ function init() { //скеция меню//
 	window.addEventListener('click', toggleMenu)
 };
 function toggleMenu(e) {
-	e.preventDefault();
+	console.log('click');
 	if (e.target.classList.contains('menu__trigger') || e.target.classList.contains('menu__trigger--text')) {
 		const wrapper = document.querySelector('.menu__list');
 		const activeElems = wrapper.querySelectorAll('.active');
 		const elem = e.target;
+		e.preventDefault();
 		const parent = elem.closest('.menu__item ');
 		const content = parent.querySelector('.menu__content');
 		const text= parent.querySelector('.menu__trigger--text');
@@ -31,5 +32,4 @@ function toggleMenu(e) {
 		};
 	}
 }
-
 window.onload = init();

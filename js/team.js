@@ -5,11 +5,12 @@ function init() { //скеция team//
 	window.addEventListener('click', toggleMenu)
 };
 function toggleMenu(e) {
-	e.preventDefault();
+	
 	if (e.target.classList.contains('team-accordeon__item') || e.target.classList.contains('team-accordeon_trigger')) {
 		const wrapper = document.querySelector('.team-accordeon');
 		const activeElems = wrapper.querySelectorAll('.active');
 		const elem = e.target;
+		e.preventDefault();
 		const parent = elem.closest('.team-accordeon__item');
 		const content = parent.querySelector('.team-accordeon__content');
 		const text= parent.querySelector('.team-accordeon_trigger');

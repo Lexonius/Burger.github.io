@@ -17,7 +17,7 @@
     margin: 0;
     padding-top: 0;
     @include phones{
-        font-size: 64px;
+        font-size: 60px;
     }
   }
 .best-list {
@@ -95,4 +95,7 @@
         width: 70%;
         margin-left: 10px;
     }
+}
+.container {
+    width: 100%;
 }
