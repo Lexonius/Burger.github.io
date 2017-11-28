@@ -52,7 +52,7 @@
     transform: rotate(-90deg);
     font-family: 'Gagalin';
     font-size: rem(40px);
-    width: 5rem;
+    width: 4rem;
     top:60%;
     white-space: nowrap;
     @include tablets {
@@ -71,6 +71,9 @@
     background: rgba(47, 50,52, 0.93);
     padding: rem(60px)rem(35px);
     display: none;
+    @include phones{
+        width: 78% !important;
+    }
 }
 .menu__content-text {
     width: 100%;
@@ -78,6 +81,9 @@
     font-size: rem(14px);
     font-weight: 200;
     line-height: rem(24px);
+    @include phones{
+        font-size: 0.75rem;
+    }
 }
 
 

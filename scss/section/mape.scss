@@ -1,11 +1,4 @@
 .mape {
-    background-image: url('../img/map-marker.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
-    background-position: 50% 50%;
-    height: 90%;
-    @include phones{
-        height: 85%;
-    }
+    flex-direction: column;
 }

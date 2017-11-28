@@ -120,7 +120,55 @@
         display: inline-block;
         }
     }
-     
     .reviews__hover--btn-text-phones:hover {
       background-color: #1f2122; }
-     
+.reviews-overlay{
+    min-width: 320px;
+    position: absolute;
+    background: #2f3234;
+    top: 0;
+    width: 100%;
+    transition: opacity .35s, height .35s;
+    visibility: hidden;
+    z-index: 15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reviews-overlay__wrap{
+    background-color: #ffffff;
+    height: auto;
+    max-width: 90%;
+    border-radius: 3px;
+    background-color: #fff;
+    width: 28.75rem;
+    position: absolute;
+    
+}
+.reviews-overlay-active{
+    opacity: .99;
+    visibility: visible;
+    height: 100%;
+}
+.reviews-overlay--title{
+    font-family: 'Gagalin';
+    font-size: 14px;
+    color: #2f3234;
+    margin-left: 10px;
+    
+}
+.reviews-overlay--text{
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.reviews-overlay-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;
+}
+.reviews-overlay-btn{
+    cursor: pointer;
+}

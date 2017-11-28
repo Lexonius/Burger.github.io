@@ -1,5 +1,7 @@
 function init() { //скеция меню//
 	console.log('READY');
+	console.log($, jQuery)
+	
 	const wrapper = document.querySelector('.menu__list');
 	console.log(wrapper)
 	window.addEventListener('click', toggleMenu)
@@ -19,6 +21,7 @@ function toggleMenu(e) {
 			if (activeElems[i] !== content) {
 				activeElems[i].classList.remove('active');
 				activeElems[i].style.display = 'none'
+				activeElems[i].parentNode.querySelector('.menu__trigger--text').style.color ='#ffffff';
 			}
 		}
 		if (!content.classList.contains('active')) {

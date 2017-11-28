@@ -204,3 +204,17 @@
     top: -64%;
     text-align: center;
 }
+.burger-slider__elem{
+    display: none;
+}
+.burger-slider{
+    display: flex;
+    flex-direction: row;
+    left: 0;
+}
+.active{
+    display: block;
+}
+.slider__img{
+    overflow: hidden;
+}
