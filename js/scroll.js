@@ -1,6 +1,11 @@
 const display = $('.maincontent');
 const sections = $('.section');
+
 let inScroll = false;
+
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
+
 const switchMenuActiveClass = sectionEq =>{
     $('.fixed-menu__item').eq(sectionEq).addClass('active')
     .siblings().removeClass('active');
@@ -62,10 +67,4 @@ $(document).on('keydown', e => {
         break; 
     }
   });
-  $('[data-scroll-to]').on('click touchstart', e => {
-    e.preventDefault();
-    const $this = $(e.currentTarget); 
-    const sectionIndex = parseInt($this.attr('data-scroll-to'));
-    
-    performTransition(sectionIndex);
-  });
+  
