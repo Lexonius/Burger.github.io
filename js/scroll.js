@@ -1,28 +1,36 @@
 const display = $('.maincontent');
 const sections = $('.section');
+
 let inScroll = false;
+
 const mobileDetect = new MobileDetect(window.navigator.userAgent);
 const isMobile = mobileDetect.mobile();
+
 const switchMenuActiveClass = sectionEq =>{
-    $('.fixed-menu__item').eq(sectionEq).addClass('active')
-    .siblings().removeClass('active');
+    $('.fixed-menu__item').eq(sectionEq).addClass('activ')
+    .siblings().removeClass('activ');
 }
+
 const performTransition = sectionEq => {
     if (inScroll) return 
     inScroll = true
+
     const position = (sectionEq * -100) + '%';
+
     display.css({
       'transform': `translate(0, ${position})`,
       '-webkit-transform': `translate(0, ${position})`
     })
+
     sections.eq(sectionEq).addClass('activ')
       .siblings().removeClass('activ');
   
     setTimeout(() => {
       inScroll = false;
       switchMenuActiveClass(sectionEq);
-    }, 130.);
+    }, 1300);
   }
+
   const difindeSections = sections => {
     const activSection = sections.filter('.activ')
 
@@ -32,38 +40,52 @@ const performTransition = sectionEq => {
         prevSection:activSection.prev()  
     }
   }
-$('.wrapper').on('wheel',e =>{
-    const deltaY = e.originalEvent.deltaY;
-    const section = difindeSections(sections);
 
-    if(deltaY>0 && section.nextSection.length) {
-        performTransition(section.nextSection.index())
-        console.log ('вниз')
+  const scrollToSection = direction => {
+    const section = difineSections(sections)
+  
+    if (inScroll) return;
+  
+    if (direction === 'up' && section.nextSection.length) { // вниз
+      performTransition(section.nextSection.index())
     }
-    if(deltaY <0 && section.prevSection.length){
-        performTransition(section.prevSection.index())
-        console.log('вверх')
+  
+    if (direction === 'down' && section.prevSection.length) { // вверх
+      performTransition(section.prevSection.index())
     }
+  }
+  
+  $('.wrapper').on({
+    wheel: e => {
+      const deltaY = e.originalEvent.deltaY;
+      let direction = (deltaY > 0) 
+        ? 'up' 
+        : 'down'
+  
+      scrollToSection(direction);
+    },
     touchmove: e => (e.preventDefault())
-});
-$(document).on('keydown', e => {
-    const section=difindeSections(sections);
-
+  });
+  
+  
+  $(document).on('keydown', e => {
+    const section = difineSections(sections);
   
     if (inScroll) return
   
     switch (e.keyCode) {
-      case 40: 
-        if(!section.nextSection.length) return;
+      case 40: // вверх
+        if (!section.nextSection.length) return;
         performTransition(section.nextSection.index());
         break;
-
-        case 38:
-        if(!section.prevSection.length) return;
+  
+      case 38: //вниз
+        if (!section.prevSection.length) return;
         performTransition(section.prevSection.index());
-        break; 
+        break;
     }
   });
+  
   if (isMobile) {
     $(window).swipe({
       swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
@@ -81,3 +103,4 @@ $(document).on('keydown', e => {
   
     performTransition(sectionIndex);
   });
+
