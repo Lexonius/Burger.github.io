@@ -1,17 +1,14 @@
 const display = $('.maincontent');
 const sections = $('.section');
-
 let inScroll = false;
-
 const mobileDetect = new MobileDetect(window.navigator.userAgent);
 const isMobile = mobileDetect.mobile();
-
 const switchMenuActiveClass = sectionEq =>{
     $('.fixed-menu__item').eq(sectionEq).addClass('active')
     .siblings().removeClass('active');
 }
 const performTransition = sectionEq => {
-    if (inScroll) return
+    if (inScroll) return 
     inScroll = true
     const position = (sectionEq * -100) + '%';
     display.css({
@@ -67,4 +64,20 @@ $(document).on('keydown', e => {
         break; 
     }
   });
+  if (isMobile) {
+    $(window).swipe({
+      swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+        console.log(direction);
+        scrollToSection(direction);
+      }
+    })
+  }
   
+  
+  $('[data-scroll-to]').on('click touchstart', e => {
+    e.preventDefault();
+    const $this = $(e.currentTarget);
+    const sectionIndex = parseInt($this.attr('data-scroll-to'));
+  
+    performTransition(sectionIndex);
+  });
