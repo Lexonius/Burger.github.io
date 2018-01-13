@@ -31,7 +31,7 @@ const performTransition = sectionEq => {
     }, 1300);
   }
 
-  const difindeSections = sections => {
+  const difineSections = sections => {
     const activSection = sections.filter('.activ')
 
     return {
