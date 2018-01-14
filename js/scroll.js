@@ -28,7 +28,7 @@ const performTransition = sectionEq => {
     setTimeout(() => {
       inScroll = false;
       switchMenuActiveClass(sectionEq);
-    }, 1300);
+    }, 1000);
   }
 
   const difineSections = sections => {
