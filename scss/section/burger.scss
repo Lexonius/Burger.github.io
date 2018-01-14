@@ -7,7 +7,7 @@
     align-items: center;
 }
 .burger__container{
-    width: 80%;
+    width: 100%;
 }
 .burger__content{
     display: flex;
@@ -72,6 +72,9 @@
     @include tablets{
         font-size: 55px;
     }
+    @include phones{
+        font-size: 40px;
+    }
 }
 .burger__content-elem-right{
     width: 40%;
@@ -120,6 +123,9 @@
 .burger__image{
     @include tablets{
         margin-top: 115px;
+    }
+    @include phones {
+        width: 50%;
     }
 }
 .price{

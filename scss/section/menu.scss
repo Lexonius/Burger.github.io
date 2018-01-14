@@ -11,6 +11,7 @@
     color: #ffffff;
     font-family: 'Gagalin';
     font-size: 72px;
+
     @include phones{
     font-size: 50px; 
     }
@@ -30,7 +31,9 @@
     background-repeat: no-repeat;
     color: #ffffff;
     display: flex;
-    
+    @include phones{
+    width: 3.85rem; 
+    }
 }
 .menu__trigger--first {
     background-image: url('../img/menu accordeon fisrt.jpg');
