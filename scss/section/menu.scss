@@ -61,6 +61,9 @@
     @include tablets {
         top:83%;
     }
+    @include phones{
+        font-size: 1.5rem;
+    }
 }
 
 .menu__item--active .menu__content {

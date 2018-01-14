@@ -39,7 +39,7 @@
     font-weight: 400;
     text-align: center;
     @include phones{
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 .best-list__text {
@@ -50,7 +50,7 @@
     color: #828180;
     text-align: center;
     @include phones {
-       font-size: 16px;
+       font-size: 12px;
     }
 }
 

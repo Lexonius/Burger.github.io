@@ -13,7 +13,7 @@
   -o-transition: 1s;
   transition: 1s;
   will-change: transform;
-  min-height: 650px; }
+  min-height: 550px; }
 
 .container {
   position: relative;
@@ -161,7 +161,7 @@ ul {
   text-align: center; }
   @media screen and (max-width: 480px) {
     .best-list__title {
-      font-size: 22px; } }
+      font-size: 20px; } }
 
 .best-list__text {
   font-family: 'Ubuntu';
@@ -172,7 +172,7 @@ ul {
   text-align: center; }
   @media screen and (max-width: 480px) {
     .best-list__text {
-      font-size: 16px; } }
+      font-size: 12px; } }
 
 .best-list__elem {
   text-align: center; }
@@ -497,7 +497,7 @@ ul {
 
 .mobile-menu__link {
   font-family: 'Ubuntu';
-  font-size: 24px;
+  font-size: 20px;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none; }
@@ -710,6 +710,9 @@ ul {
   color: #e35028;
   height: 80%;
   margin-right: 10px; }
+  @media screen and (max-width: 480px) {
+    .price {
+      font-size: 50px; } }
 
 .burger-link {
   min-width: 6.125rem;
@@ -1051,6 +1054,9 @@ ul {
   @media screen and (max-width: 768px) {
     .menu__trigger--text {
       top: 83%; } }
+  @media screen and (max-width: 480px) {
+    .menu__trigger--text {
+      font-size: 1.5rem; } }
 
 .menu__item--active .menu__content {
   display: none;
@@ -1288,6 +1294,9 @@ ul {
   margin-bottom: 0.3125rem;
   font-size: 0.875rem;
   margin-top: 0.3rem; }
+  @media screen and (max-width: 480px) {
+    .form__block-title {
+      font-size: 0.675rem; } }
 
 .form__content {
   width: 50%;
@@ -1343,6 +1352,9 @@ ul {
   width: 100%;
   border: none;
   resize: none; }
+  @media screen and (max-width: 480px) {
+    .form__textarea {
+      height: 6.4rem; } }
 
 .form__controls {
   display: -webkit-box;
@@ -1362,6 +1374,9 @@ ul {
   vertical-align: middle;
   font-family: 'Ubuntu';
   font-size: 0.875rem; }
+  @media screen and (max-width: 480px) {
+    .form__radio-text {
+      font-size: 0.675rem; } }
 
 .order-link-clean {
   color: #fff;
@@ -1384,7 +1399,7 @@ ul {
   @media screen and (max-width: 480px) {
     .section__title--order {
       padding-top: 0;
-      font-size: 60px;
+      font-size: 45px;
       padding-top: 0; } }
 
 .form__radio-elem {
@@ -1455,6 +1470,9 @@ ul {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+
+.mape-image {
+  height: 85%; }
 
 .footer {
   background-image: url("../img/footer.jpg");

@@ -134,6 +134,9 @@
     color:#e35028;
     height: 80%;
     margin-right: 10px;
+    @include phones {
+        font-size: 50px;
+    }
 }
 .burger-link {
     min-width: 6.125rem;
