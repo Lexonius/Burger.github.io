@@ -338,10 +338,6 @@ ul {
   align-items: center; }
   @media screen and (max-width: 768px) {
     .hero__content {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; } }
@@ -603,7 +599,7 @@ ul {
   width: 50%; }
   @media screen and (max-width: 768px) {
     .burger__content-elem {
-      width: 100%; } }
+      width: 70%; } }
 
 .content__image {
   width: 90px;
@@ -778,10 +774,9 @@ ul {
   padding-right: 20px; }
 
 .wrap__burger {
-  position: relative; }
-  @media screen and (max-width: 768px) {
-    .wrap__burger {
-      width: 30%; } }
+  position: relative;
+  width: 20%;
+  height: 20%; }
 
 .wrap__burger:hover .burger__content-elem--dropdown {
   display: block; }
@@ -808,9 +803,6 @@ ul {
 
 .active {
   display: block; }
-
-.slider__img {
-  overflow: hidden; }
 
 .team {
   background: url("../img/background fourth.jpg") center center no-repeat;
@@ -1029,17 +1021,20 @@ ul {
 .menu__trigger--first {
   background-image: url("../img/menu accordeon fisrt.jpg");
   position: relative;
-  text-decoration: none; }
+  text-decoration: none;
+  background-size: 200%; }
 
 .menu__trigger--second {
   background-image: url("../img/menu accordeon second.jpg");
   position: relative;
-  text-decoration: none; }
+  text-decoration: none;
+  background-size: 200%; }
 
 .menu__trigger--third {
   background-image: url("../img/menu accordeon third.jpg");
   position: relative;
-  text-decoration: none; }
+  text-decoration: none;
+  background-size: 200%; }
 
 .menu__trigger--text {
   position: absolute;
@@ -1071,7 +1066,7 @@ ul {
   display: none; }
   @media screen and (max-width: 480px) {
     .menu__content {
-      width: 78% !important; } }
+      width: 100%; } }
 
 .menu__content-text {
   width: 100%;
@@ -1081,7 +1076,7 @@ ul {
   line-height: 1.5rem; }
   @media screen and (max-width: 480px) {
     .menu__content-text {
-      font-size: 0.75rem; } }
+      line-height: 1rem; } }
 
 .reviews__list {
   height: auto;
@@ -1219,7 +1214,6 @@ ul {
   background-color: #1f2122; }
 
 .reviews-overlay {
-  min-width: 320px;
   position: absolute;
   background: #2f3234;
   top: 0;
@@ -1392,7 +1386,7 @@ ul {
 .section__title--order {
   padding-top: 50px;
   font-family: 'Gagalin';
-  font-size: 72px;
+  font-size: 55px;
   color: #f8b43a;
   padding-top: 50px;
   text-align: center; }
@@ -1480,7 +1474,8 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-size: cover; }
+  background-size: cover;
+  height: 15%; }
 
 .footer__img {
   width: 100%;
@@ -1597,3 +1592,5 @@ ul {
   src: url("../fonts/Gagalin-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
+/*# sourceMappingURL=main.css.map */

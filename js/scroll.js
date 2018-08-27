@@ -6,9 +6,9 @@ let inScroll = false;
 const mobileDetect = new MobileDetect(window.navigator.userAgent);
 const isMobile = mobileDetect.mobile();
 
-const switchMenuActiveClass = sectionEq =>{
-    $('.fixed-menu__item').eq(sectionEq).addClass('activ')
-    .siblings().removeClass('activ');
+const switchMenuActiveClass = sectionEq => {
+    $('.fixed-menu__item').eq(sectionEq).addClass('active')
+    .siblings().removeClass('active');
 }
 
 const performTransition = sectionEq => {

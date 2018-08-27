@@ -39,16 +39,19 @@
     background-image: url('../img/menu accordeon fisrt.jpg');
     position: relative;
     text-decoration: none;
+    background-size: 200%;
 }
 .menu__trigger--second{
     background-image: url('../img/menu accordeon second.jpg');
     position: relative;
     text-decoration: none;
+    background-size: 200%;
 }
 .menu__trigger--third{
     background-image: url('../img/menu accordeon third.jpg');
     position: relative;
     text-decoration: none;
+    background-size: 200%;
 }
 .menu__trigger--text{
     position: absolute;
@@ -78,7 +81,7 @@
     padding: rem(60px)rem(35px);
     display: none;
     @include phones{
-        width: 78% !important;
+        width: 100%;
     }
 }
 .menu__content-text {
@@ -88,7 +91,7 @@
     font-weight: 200;
     line-height: rem(24px);
     @include phones{
-        font-size: 0.75rem;
+        line-height: 1rem;
     }
 }
 

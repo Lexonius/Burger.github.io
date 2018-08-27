@@ -40,7 +40,7 @@
    justify-content: flex-start;
    width: 50%;
    @include tablets{
-       width: 100%;
+       width: 70%;
    }
 }
 
@@ -197,9 +197,9 @@
 }
 .wrap__burger{
     position: relative;
-    @include tablets{
-        width: 30%;
-    }
+    width: 20%;
+    height: 20%;
+
 
 }
 .wrap__burger:hover .burger__content-elem--dropdown{
@@ -224,6 +224,4 @@
 .active{
     display: block;
 }
-.slider__img{
-    overflow: hidden;
-}
+
